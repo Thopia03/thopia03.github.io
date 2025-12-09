@@ -1,0 +1,86 @@
+/* color theme under: https://coolors.co/121212-1e1e1e-cccccc-9b5de5-c77dff-ffffff*/
+/* I want a global dark theme for my website, mixed with some purple. */
+
+body{
+margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+background-color: #121212;
+color: #ffffff;
+}
+
+/* styles for the links. */
+a{
+    color: #C77DFF;
+    text-decoration: none;
+}
+a:hover{
+    color: #E7C6FF;
+}
+
+/* Now we add the style of the navigation bar. */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: rgba(18, 18, 18, 0.85);
+    backdrop-filter: blur(8px);
+
+    border-bottom: 1px solid #9B5DE5;
+
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: #C77DFF;
+    text-shadow: 0 0 10px #9B5DE5;
+}
+
+main {
+    padding: 6rem 2rem 2rem;
+}
+
+.card {
+    background: #1E1E1E;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 12px;
+
+    max-width: 800px;
+
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+.introbox h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.4rem;
+
+    background: #9B5DE5;
+    border-radius: 8px;
+
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #C77DFF;
+    box-shadow: 0 0 10px #C77DFF;
+}
