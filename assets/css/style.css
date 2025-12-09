@@ -1,4 +1,5 @@
 /* color theme under: https://coolors.co/121212-1e1e1e-cccccc-9b5de5-c77dff-ffffff*/
+/* svgs from https://simpleicons.org */
 /* I want a global dark theme for my website, mixed with some purple. */
 
 body{
@@ -83,4 +84,41 @@ main {
 .button:hover {
     background: #C77DFF;
     box-shadow: 0 0 10px #C77DFF;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #9B5DE5;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: #cccccc;
+    background-color: #121212;
+}
+
+.socials {
+    margin-top: 1rem;
+}
+
+.socialButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+.socialButton img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+.socialButton:hover{
+    background-color: #C77DFF;
+    box-shadow: 0 0 15px #C77DFF;
+}
+
+.socialButton:hover {
+    transform: scale(1.1);
 }
