@@ -114,11 +114,30 @@ main {
     font-weight: bold;
 }
 
-@keyframes fill {
-    from { --p: 0; }
-    to   { --p: var(--target); }
+.langSkillFormat {
+    margin-bottom: 5px;
+    color: #ffffff;
 }
 
+.langBar {
+    width: 100%;
+    height: 18px;
+    background: #1E1E1E;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.langProgress {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #a56bfa, #d29bff);
+    border-radius: 10px;
+    animation: grow 1.8s ease-out forwards;
+}
+
+@keyframes grow {
+    to {width: var(--w);}
+}
 
 .button {
     display: inline-block;
