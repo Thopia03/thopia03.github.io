@@ -108,6 +108,42 @@ main {
     box-shadow: 0 0 10px rgba(155,93,229,0.6);
 }
 
+.langSkills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    color: #ffffff;
+}
+
+.langCircle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        conic-gradient(
+            #a56bfa calc(var(--p) * 1%), 
+            #333 calc(var(--p) * 1%)
+        );
+    position: relative;
+    animation: fill 2s ease-out forwards;
+}
+
+.circle span {
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+@keyframes fill {
+    from { --p: 0; }
+    to   { --p: var(--target); }
+}
+
+
 .button {
     display: inline-block;
     margin-top: 1rem;
