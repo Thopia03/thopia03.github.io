@@ -133,6 +133,8 @@ main {
     background: linear-gradient(90deg, #a56bfa, #d29bff);
     border-radius: 10px;
     animation: grow 1.8s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 @keyframes grow {
