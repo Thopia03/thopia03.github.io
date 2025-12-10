@@ -91,6 +91,11 @@ main {
     flex: 1;
 }
 
+.aboutFooter {
+    margin-top: 2rem;
+    text-align: center;
+}
+
 .aboutImage img {
     width: 200px;
     height: 200px;
