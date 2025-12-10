@@ -71,29 +71,15 @@ main {
     color: #C77DFF;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.7rem 1.4rem;
-
-    background: #9B5DE5;
-    border-radius: 8px;
-
-    color: white;
-    font-weight: bold;
-    transition: 0.2s;
-}
-
-.button:hover {
-    background: #C77DFF;
-    box-shadow: 0 0 10px #C77DFF;
-}
-
 .aboutCard {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+}
+
+.reverseAboutCard {
+    flex-direction: row-reverse;
 }
 
 .cardTopImg {
@@ -120,6 +106,24 @@ main {
     object-fit: cover;
     border-radius: 12px 12px 0 0;
     box-shadow: 0 0 10px rgba(155,93,229,0.6);
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.4rem;
+
+    background: #9B5DE5;
+    border-radius: 8px;
+
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #C77DFF;
+    box-shadow: 0 0 10px #C77DFF;
 }
 
 ul {
