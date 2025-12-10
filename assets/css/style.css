@@ -125,7 +125,7 @@ main {
 .scrollFill {
     --progress: 0;
     animation-timeline: view();
-    animation-range: entry 0% exit 100%;
+    animation-range: entry 20% cover 100%;
     animation: scrollProgress linear both;
 }
 
