@@ -122,6 +122,18 @@ main {
     box-shadow: 0 0 10px rgba(155,93,229,0.6);
 }
 
+.ul {
+    margin-left: 1.5rem;
+    color: #cccccc;
+}
+
+.ul li::marker {
+    color: #9B5DE5;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
 
 footer {
     text-align: center;
