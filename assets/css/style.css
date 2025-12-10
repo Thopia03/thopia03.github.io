@@ -152,9 +152,9 @@ main {
 
 .scrollAnimate {
     opacity: 0;
-    animation: fadeSlideIn 1s ease-out both;
+    animation: fadeSlideIn 2.8s ease-out both;
     animation-timeline: view(); /* tells animation when element is being seen */
-    animation-range: entry 0% cover 40%; /* tells when to start */
+    animation-range: entry 25% cover 50%; /* tells when to start */
 }
 
 @keyframes fadeSlideIn {
