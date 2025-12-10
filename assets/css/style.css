@@ -139,6 +139,24 @@ main {
     to {width: var(--w);}
 }
 
+.scrollAnimate {
+    opacity: 0;
+    animation: fadeSlideIn 1s ease-out both;
+    animation-timeline: view(); /* tells animation when element is being seen */
+    animation-range: entry 0% cover 40%; /* tells when to start */
+}
+
+@keyframes fadeSlideIn {
+    from{
+        opacity: 0;
+        transform: translate(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .button {
     display: inline-block;
     margin-top: 1rem;
