@@ -132,7 +132,7 @@ main {
     width: 0%;
     animation: fillSmooth 2.8s ease-out both;
     animation-timeline: view();
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 50% cover 70%;
 }
 
  @keyframes fillSmooth {
