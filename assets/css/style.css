@@ -129,9 +129,9 @@ main {
 /* scroll driven animation */
 .scrollFill {
     --progress: 0;
+    animation: scrollProgress linear both;
     animation-timeline: view();
     animation-range: entry 50% cover 100%;
-    animation: scrollProgress linear both;
 }
 
 .langProgress {
