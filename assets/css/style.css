@@ -155,6 +155,12 @@ main {
     width: calc((var(--percent) * 1%) * (var(--progress) / 100));
 }
 
+@property --progress {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+}
+
 .scrollAnimate {
     opacity: 0;
     animation: fadeSlideIn 2.8s ease-out both;
