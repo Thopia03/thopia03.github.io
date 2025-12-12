@@ -131,9 +131,15 @@ main {
   transition: width 10s ease;
 }
 
-.progress-text {
-  pointer-events: none;
-  color: #121212;
+.progressText {
+    pointer-events: none;
+    color: #121212;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+
 }
 
 .scrollAnimate {
