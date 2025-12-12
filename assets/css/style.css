@@ -131,6 +131,11 @@ main {
   transition: width 10s ease;
 }
 
+.progress-text {
+  pointer-events: none;
+  color: #121212;
+}
+
 .scrollAnimate {
     opacity: 0;
     animation: fadeSlideIn 2.8s ease-out both;
