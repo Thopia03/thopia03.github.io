@@ -190,7 +190,7 @@ main {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     opacity: 0;
     font-size: 1.3rem;
     transition:
