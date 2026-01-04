@@ -161,6 +161,11 @@ main {
     }
 }
 
+
+
+
+/* styles for buttons */
+
 .button {
     display: inline-block;
     margin-top: 1rem;
@@ -179,6 +184,33 @@ main {
     box-shadow: 0 0 10px #C77DFF;
 }
 
+.contact-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-button::after {
+    content: "✈️";
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: right 0.6s ease-out, opacity 0.3s ease-in-out, transform 0.6s ease-out;
+}
+
+.contact-button:active::after {
+    right: -4rem;
+    opacity: 1;
+    transform: translateY(-150%) rotate(20deg);
+    opacity: 1;
+}
+
+
+
+
+/* styles for lists */
+
 ul {
     margin-left: 1.5rem;
     color: #cccccc;
@@ -191,6 +223,11 @@ ul li::marker {
 li {
     margin-bottom: 0.5rem;
 }
+
+
+
+
+/* This part is for everything related to the footer.*/
 
 footer {
     text-align: center;
