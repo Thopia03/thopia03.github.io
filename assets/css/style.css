@@ -190,20 +190,20 @@ main {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
     opacity: 0;
     font-size: 1.3rem;
     transition:
-        transform 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+        transform 0.6s ease,
         opacity 0.6s ease;
 }
 
 .contact-button:hover .btnIcon {
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -70%);
     opacity: 1;
 }
 
-.contaxt-button .btnText {
+.contact-button .btnText {
     display: inline-block;
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
