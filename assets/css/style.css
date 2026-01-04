@@ -190,17 +190,14 @@ main {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -100%);
     opacity: 0;
     font-size: 1.3rem;
-    transition:
-        transform 0.6s ease,
-        opacity 0.6s ease;
+    transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 .contact-button:hover .btnIcon {
-    transform: translate(-50%, -50%);
     opacity: 1;
+    transform: translateY(5px);
 }
 
 .contact-button .btnText {
