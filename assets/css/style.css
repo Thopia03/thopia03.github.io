@@ -50,6 +50,9 @@ a:hover {
     text-shadow: 0 0 10px #9B5DE5;
 }
 
+
+
+
 main {
     padding: 6rem 2rem 2rem;
 }
@@ -161,7 +164,7 @@ main {
     }
 }
 
-/* styles for timelines */
+/* styles for timelines - copied partially from CampusAI! Please check before.*/
 .timeline {
     position: relative;
     margin: 1rem 0;
@@ -171,16 +174,17 @@ main {
 .timeline::before {
     content: "";
     position: absolute;
-    left: 8px; /* Linie leicht nach links */
+    left: 10px;
     top: 0;
     bottom: 0;
-    width: 2px;
-    background-color: #9B5DE5; /* deine lila Hauptfarbe */
+    width: 3px;
+    background-color: #9B5DE5;
+    box-shadow: 0 0 15px #C77DFF;
 }
 
 .timeline-item {
    display: flex;
-   align-items: flex-start;
+   align-items: center;
    margin-bottom: 1.5rem;
 }
 
@@ -188,9 +192,8 @@ main {
    width: 12px;
    height: 12px;
    border-radius: 50%;
-   background-color: #C77DFF; /* helleres Lila */
+   background-color: #C77DFF;
    margin-right: 1rem;
-   box-shadow: 0 0 6px #9B5DE5;
 }
 
 .timeline-content h3 {
@@ -199,7 +202,7 @@ main {
 }
 
 .timeline-content span {
-   color:#cccccc;
+   color:#83b818;
    font-size:.9rem;
 }
 
