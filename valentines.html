@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Be My Valentine 💖</title>
+<style>
+  body {
+    font-family: 'Times new Roman', cursive;
+    background-color: #ffe6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  h1 {
+    color: #ff4d6d;
+    font-size: 2.5em;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label {
+    background-color: #ff99ac;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  label:hover {
+    background-color: #ff4d6d;
+    transform: scale(1.05);
+  }
+
+  .message {
+    margin-top: 20px;
+    opacity: 0; 
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+      font-size:1.5em; 
+      color:#ff3366; 
+      text-align:center; 
+      max-width:400px; 
+      line-height:1.4em; 
+      background:white; 
+      padding:.8em; 
+      border-radius:.8em; 
+      box-shadow:
+          0px 3px rgba(255,77,109,.3),
+          inset -2px -2px rgba(255,230,230,.7);
+}
+
+input[type="checkbox"]:checked + .message {
+    opacity :1 ;
+    transform :scale(1) ;
+}
+</style>
+</head>
+
+<body>
+<h1>Will you be my Valentine? 💕</h1>
+
+<!-- Der "Button" -->
+<label for="valentine"> Yes! (there is no 'no') 💌</label>
+<input type="checkbox" id="valentine">
+
+<!-- Die versteckte Nachricht -->
+<div class="message">
+🌹 Yay! Thank you cutiepie wahhhh! 🌹<br><br>
+  
+  Hiermit lade ich dich zum gemeinsamen Sushi machen am Samstag ein!❤️ <br><br>
+  
+  ❤️Love uuuu ❤️
+  </div>
+
+</body>
+</html>
