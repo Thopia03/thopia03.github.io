@@ -16,7 +16,7 @@ body {
 a {
     text-decoration: none;
     color: #C77DFF;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
 }
 
 a:hover {
@@ -128,4 +128,47 @@ footer {
 
 .socialButton:hover {
     transform: scale(1.4);
+}
+
+
+/* Mobile Optimization */
+@media (max-width: 750px) {
+
+    .chapterContainer {
+        padding-top: 6rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    .chapterSubtitle {
+        font-size: 0.85rem;
+        margin-bottom: 2rem;
+    }
+
+    .chapterContent p {
+        font-size: 1.05rem; /*slightly bigger for mobile*/
+        line-height: 1.9;
+    }
+
+
+
+
+    .navbar {
+        gap: 1.2rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .socialButton {
+        width: 40px;
+        height: 40px;
+    }
+
+    .socialButton img {
+        width: 20px;
+        height: 20px;
+    }
 }
