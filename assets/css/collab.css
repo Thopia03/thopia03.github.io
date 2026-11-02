@@ -1,0 +1,329 @@
+/* color theme under: https://coolors.co/121212-1e1e1e-cccccc-9b5de5-c77dff-ffffff*/
+/* svgs from https://simpleicons.org */
+/* I want a global dark theme for my website, mixed with some purple. */
+
+body{
+margin: 0;
+padding: 0;
+font-family: 'Inter', sans-serif;
+background-color: #121212;
+color: #ffffff;
+}
+
+/* styles for the links. */
+a{
+    color: #C77DFF;
+    text-decoration: none;
+}
+a:hover {
+    color: #E7C6FF;
+}
+
+/* Now we add the style of the navigation bar. */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: rgba(18, 18, 18, 0.75);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid #9B5DE5;
+
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(155,93,229,0.3);
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    color: #C77DFF;
+    text-shadow: 0 0 10px #9B5DE5;
+}
+
+main {
+    padding: 6rem 2rem 2rem;
+}
+
+.card {
+    background: #1E1E1E;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 12px;
+
+    max-width: 800px;
+
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+.introbox h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #C77DFF;
+}
+
+.aboutCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.reverseAboutCard {
+    flex-direction: row-reverse;
+}
+
+.cardTopImg {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutText {
+    flex: 1;
+}
+
+.aboutFooter {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.aboutImage img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(155,93,229,0.6);
+    align-self: center;
+}
+
+.topImg Img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px 50px 30px;
+    box-shadow: 0 0 10px rgba(155,93,229,0.6);
+}
+
+.progressBarContainer {
+  width: 100%;
+  max-width: 360px;
+  height: 40px;
+  background-color: #121212;
+  border-radius: 20px;
+  border: 1px solid #121212;
+  overflow: hidden;
+  position: relative;
+}
+
+.progressBarFill {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #ffffff, #c77dff);
+  transition: width 10s ease;
+}
+
+.progressText {
+    pointer-events: none;
+    color: #121212;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    z-index: 10;
+}
+
+.scrollAnimate {
+    opacity: 0;
+    animation: fadeSlideIn 2.8s ease-out both;
+    animation-timeline: view(); /* tells animation when element is being seen */
+    animation-range: entry 25% cover 50%; /* tells when to start */
+}
+
+@keyframes fadeSlideIn {
+    from{
+        opacity: 0;
+        transform: translate(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* styles for timelines - copied partially from CampusAI! Please check before.*/
+.timeline {
+    position: relative;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #9B5DE5;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #C77DFF;
+    margin-right: 1rem;
+    box-shadow: 0 0 15px #C77DFF;
+}
+
+.timeline-content h3 {
+    margin-bottom: .3rem;
+    font-size: 1.1rem;
+}
+
+.timeline-content span {
+    color:#83b818;
+    font-size:.9rem;
+}
+
+.timeline-content p {
+    margin-top:.4rem;
+}
+
+/* styles for buttons */
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.4rem;
+
+    background: #9B5DE5;
+    border-radius: 8px;
+
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover {
+    background: #C77DFF;
+    box-shadow: 0 0 10px #C77DFF;
+}
+
+.contact-button .btnIcon {
+    position: absolute;
+    left: 50%; 
+    top: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    font-size: 1.5rem;
+    transition: transform 0.6s, top 0.6s ease, opacity 0.6s ease;
+}
+
+.contact-button:hover .btnIcon {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.contact-button .btnText {
+    display: inline-block;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.contact-button:hover .btnText {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+/* styles for lists */
+ul {
+    margin-left: 1.5rem;
+    color: #cccccc;
+}
+
+ul li::marker {
+    color: #9B5DE5;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* This part is for everything related to the footer.*/
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #9B5DE5;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: #cccccc;
+    background-color: #121212;
+    box-shadow: 0 2px 10px rgba(155,93,229,0.3);
+}
+
+.socials {
+    margin-top: 1rem;
+}
+
+.socialButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+.socialButton img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+.socialButton:hover{
+    background-color: #C77DFF;
+    box-shadow: 0 0 15px #C77DFF;
+}
+
+.socialButton:hover {
+    transform: scale(1.4);
+}
+
+/* Everything new related to the collab*/
+
+.winter-highlight { 
+    color: #80e5ff; 
+    text-shadow: 0 0 10px rgba(128, 229, 255, 0.5); 
+}
+
+.artist-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 1rem; 
+    margin-top: 1.5rem; 
+}
+
+.artist-card { 
+    background: #121212; 
+    padding: 1rem; 
+    border-radius: 8px; 
+    border: 1px solid #9B5DE5; 
+    text-align: center; 
+}
